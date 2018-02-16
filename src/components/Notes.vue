@@ -164,7 +164,8 @@ export default {
       $('#new-note-modal').modal('toggle')
       this.newTitle = ''
       this.newBody = ''
-      this.newType = ''
+      this.newType = '0'
+      this.newTasks = []
     },
     add_task () {
       this.newTasks.push({
