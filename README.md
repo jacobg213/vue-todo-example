@@ -4,6 +4,10 @@
 
 Be sure to check out the [Lumen API](https://bitbucket.org/jacobg213/todo-api) that this app is based on!
 
+## Before you start
+* Setup the Lumen API mentioned above first to make use of all the functions.
+* Go to `src/config.js` file and update the Domain const with you API's domain name.
+
 ## Build Setup
 
 ``` bash
