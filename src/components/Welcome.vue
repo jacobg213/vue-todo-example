@@ -47,7 +47,7 @@ export default {
   methods: {
     login () {
       let self = this
-      this.axios.post(Domain + '/login', {
+      this.axios.post(Domain + 'login', {
         email: this.email,
         password: this.password
       }).then((response) => {

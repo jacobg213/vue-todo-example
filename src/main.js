@@ -5,6 +5,7 @@ import App from './App'
 import router from './router'
 import axios from 'axios'
 import VueAxios from 'vue-axios'
+import Domain from './config.js'
 
 Vue.use(VueAxios, axios)
 
@@ -44,7 +45,7 @@ main.$on('logged_id', function (id, name) {
   main.name = name
 })
 main.$on('logout', function () {
-  this.axios.post('http://todo.test/logout')
+  this.axios.post(Domain + 'logout')
     .then((response) => {
       router.push({
         name: 'Welcome'
